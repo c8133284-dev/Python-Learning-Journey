@@ -1,0 +1,40 @@
+#Input and Output
+
+# Taking input from the user
+name = input("enter your name: ")
+college = input("enter your college name: ")
+# Printing the output
+print(f"I study at {college}")
+
+# String methods
+name=input("enter your name: ")
+# Convert to uppercase
+print("Uppercase:",name.upper())
+# Convert to lowercase
+print("Lowercase:",name.lower())
+
+# Finding the number of characters without spaces
+string=input("Enter your string: ")
+string_without_spaces=string.replace(" ","")
+print("Number of characters in the string:",len(string_without_spaces))
+
+# Replacing spaces with underscores
+sentence=input("Enter your sentence: ")
+replaced = sentence.replace(" ","_")
+print("replaced sentence:",replaced)
+
+# Accessing the last character of a string
+name="charitha"
+print(name[-1])
+
+# Combining first name and last name
+first_name=input("Enter your first name: ")
+last_name=input("Enter your last name: ")
+full_name=first_name+" "+last_name
+print("Full name",full_name)
+
+name=input("Enter your name: ")
+print("Uppercase:",name.upper())
+print("Lowercase:",name.lower())
+print("Number of characters in the name:",len(name))
+print("replaced name:",name.replace(" ","_"))
