@@ -1,0 +1,81 @@
+# TUPLES
+
+# Creating a tuple
+my_tuple = ("banana", "apple", "orange", "mango", "grapes")
+print(my_tuple)
+
+# Accessing elements using slicing
+print(my_tuple[1:3])
+
+# Checking the data type of the tuple
+print(type(my_tuple))
+
+# Finding the number of elements in the tuple
+print(len(my_tuple))
+
+# Combining two tuples using the + operator
+tuple1 = ("banana", "apple", "orange")
+tuple2 = (1, 2, 3, 4, 5)
+combined_tuple = tuple1 + tuple2
+print(combined_tuple)
+
+# Repeating a tuple using the * operator
+repeated_tuple = tuple1 * 2
+print(repeated_tuple)
+print("banana" in tuple1)
+
+
+# SETS
+
+# Creating two sets
+my_fruits = {"banana", "apple", "orange", "mango"}
+friends_fruits = {"grapes", "kiwi", "banana", "orange"}
+
+# Union: combines elements from both sets
+print(my_fruits | friends_fruits) 
+
+# Intersection: returns common elements
+print(my_fruits & friends_fruits)  
+
+# Difference: returns elements present only in my_fruits
+print(my_fruits - friends_fruits) 
+
+# Adding an element to a set
+my_fruits.add("kiwi")
+print(my_fruits)
+
+# discard() does not give an error if the element is not present
+my_fruits.discard("grapes")
+print(my_fruits)
+
+# Removing an arbitrary element using pop()
+my_fruits.pop()
+print(my_fruits)
+
+
+# Removing all elements from the set
+my_fruits.clear()
+print(my_fruits)
+
+# CONVERTING LIST TO SET AND TUPLE
+
+## Creating a list
+my_list = ["banana", "apple", "orange", "mango"]
+
+# Converting list into a set
+my_set = set(my_list)
+print(my_set)
+
+# Converting list into a tuple
+my_tuple = tuple(my_list)
+print(my_tuple)
+
+
+# Adding an element to a set
+my_set.add("kiwi")
+print(my_set)
+
+
+# Tuples are immutable, so we cannot use add()
+# my_tuple.add("kiwi")
+# This would give an AttributeError
