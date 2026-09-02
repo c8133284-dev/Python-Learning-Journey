@@ -1,0 +1,27 @@
+# Lists in Python
+
+# Creating a list
+my_list = ["banana", "apple", "orange", "mango"]
+print(my_list)
+
+# Adding an item
+my_list.append("grapes")
+print(my_list)
+
+# Removing an item using index
+my_list.pop(2)
+print(my_list)
+
+# Inserting an item
+my_list.insert(1, "kiwi")
+print(my_list)
+
+# Sorting a list
+list = [22,43,90,12,45,67,89]
+print(list)
+list.sort(reverse=True)
+print(list)
+
+# Reversing a list
+list.reverse()
+print(list)
