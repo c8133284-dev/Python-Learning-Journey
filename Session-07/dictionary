@@ -1,0 +1,51 @@
+# DICTIONARY
+
+# Creating a dictionary of Karnataka cities and their famous foods
+karnataka_food={"bangalore":"bisi bele bath",
+                "mysore":"mysore pak",
+                "mangalore":"neer dosa",
+                "shimoga":"ragi mudde",
+                "hassan":"akki rotti"   
+              }
+print(karnataka_food)
+
+# Adding a new key-value pair to the dictionary
+karnataka_food["udupi"]="masala dosa"
+print(karnataka_food)
+
+# Updating the value of an existing key
+karnataka_food["bangalore"]="mutton biryani"
+print(karnataka_food)
+
+
+# Removing an item using pop()
+karnataka_food.pop("shimoga")
+print(karnataka_food)
+
+# Removing an item using del
+del karnataka_food["hassan"]
+print(karnataka_food)
+
+# Getting all keys from the dictionary
+print(karnataka_food.keys())
+# Getting all values from the dictionary
+print(karnataka_food.values())
+# Getting all key-value pairs from the dictionary
+print(karnataka_food.items())
+
+# NESTED DICTIONARY
+# Creating a dictionary containing dictionaries
+friends = {
+    "friend1": {
+        "name": "Rahul",
+        "favorite_subject": "Python",
+        "favorite_food": "Pizza"
+    },
+    "friend2": {
+        "name": "Anu",
+        "favorite_subject": "Maths",
+        "favorite_food": "Biryani"
+    }
+}
+
+print(friends["friend1"]["favorite_food"])
